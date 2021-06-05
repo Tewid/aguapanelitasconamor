@@ -1,0 +1,418 @@
+<<<<<<< HEAD
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========================================
+            01. nav CSS
+            02. nav CSS
+            03. sección 1 CSS
+            04. sección 2 CSS
+============================================*/
+/*=========================================
+            01. nav CSS
+============================================*/
+nav
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ededed;
+    color: black;
+
+}
+
+a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.lugar
+{
+    color:darkgray;
+    text-decoration: none; 
+}
+.b-donar{
+    background-color: #EA3F3F;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+}
+.b-donar:hover{
+    transition: 0.3s;
+    background-color: #C73535;
+}
+/*=========================================
+             03. sección 1 CSS
+============================================*/
+.caja-titulop{
+    padding-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA3F3F;
+    color: #fff;
+    text-align: center;
+}
+.banner1{
+    margin-top: 5rem;
+    background-image: url("assets/img/IMG_0089.jpg");
+    color: #fff;
+    width: 100%;
+    height: 720px;
+    text-align: center;
+    vertical-align: middle;
+}
+.contenedorform{
+    height: 30rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*=========================================
+            04. sección 2 CSS
+============================================*/
+.caja-titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA3F3F;
+    color: #fff;
+    text-align: center;
+    
+}
+.contenedorb{
+    width: 100%;
+    height: 100%;
+}
+.b-donar2{
+    background-color: #7FA2EA;
+    border: none;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.b-donar2:hover{
+    transition: 0.3s;
+    background-color: #5E7BB4;
+}
+.contenedor-g{
+    height: 100%;
+}
+.contenedor-mantenimiento{
+    height: 100%;
+}
+.contenedor-g-2{
+    background-color: rebeccapurple;
+    height: 4rem;
+}
+.titulo{
+    color:#EA3F3F;
+    text-align: center;
+}
+
+/*Estilo de formulario*/
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #000;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px  solid #c7c7c7;
+}
+.form .lbl-nombre::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px  solid #EA3F3F;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #EA3F3F;
+}
+.form input:focus + .lbl-nombre .text-nomb, .form input:valid + .lbl-nombre .text-nomb{
+     transform: translateY(-140%);
+     font-size: 14px;
+     color: #EA3F3F;
+}
+.form input:focus + .lbl-nombre::after{
+ transform: translateX(0%);
+}
+textarea{
+    border: 3px solid #EA3F3F;
+    border-radius: 10px;
+    resize: none;
+    outline:none;
+}
+/*Estilo de bontones*/
+button{
+    font-family: inherit;
+    transition: 1s;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color: black;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: #EA3F3F;
+    color: #fff;
+
+}
+/*=========================================
+            05. FOOTER CSS
+============================================*/
+footer{
+    background-color: #EA3F3F; 
+    color: #fff; 
+    padding-top: 30px;
+}
+.bordef{
+    border-bottom: 1px  solid #fff;
+=======
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=========================================
+            01. nav CSS
+            02. nav CSS
+            03. sección 1 CSS
+            04. sección 2 CSS
+============================================*/
+/*=========================================
+            01. nav CSS
+============================================*/
+nav
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ededed;
+    color: black;
+
+}
+
+a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.lugar
+{
+    color:darkgray;
+    text-decoration: none; 
+}
+.b-donar{
+    background-color: #EA3F3F;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+}
+.b-donar:hover{
+    transition: 0.3s;
+    background-color: #C73535;
+}
+/*=========================================
+             03. sección 1 CSS
+============================================*/
+.caja-titulop{
+    padding-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA3F3F;
+    color: #fff;
+    text-align: center;
+}
+.banner1{
+    margin-top: 5rem;
+    background-image: url("assets/img/IMG_0089.jpg");
+    color: #fff;
+    width: 100%;
+    height: 720px;
+    text-align: center;
+    vertical-align: middle;
+}
+.contenedorform{
+    height: 30rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+}
+/*=========================================
+            04. sección 2 CSS
+============================================*/
+.caja-titulo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA3F3F;
+    color: #fff;
+    text-align: center;
+    
+}
+.contenedorb{
+    width: 100%;
+    height: 100%;
+}
+.b-donar2{
+    background-color: #7FA2EA;
+    border: none;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.b-donar2:hover{
+    transition: 0.3s;
+    background-color: #5E7BB4;
+}
+.contenedor-g{
+    height: 100%;
+}
+.contenedor-mantenimiento{
+    height: 100%;
+}
+.contenedor-g-2{
+    background-color: rebeccapurple;
+    height: 4rem;
+}
+.titulo{
+    color:#EA3F3F;
+    text-align: center;
+}
+
+/*Estilo de formulario*/
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #000;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px  solid #c7c7c7;
+}
+.form .lbl-nombre::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px  solid #EA3F3F;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #EA3F3F;
+}
+.form input:focus + .lbl-nombre .text-nomb, .form input:valid + .lbl-nombre .text-nomb{
+     transform: translateY(-140%);
+     font-size: 14px;
+     color: #EA3F3F;
+}
+.form input:focus + .lbl-nombre::after{
+ transform: translateX(0%);
+}
+textarea{
+    border: 3px solid #EA3F3F;
+    border-radius: 10px;
+    resize: none;
+    outline:none;
+}
+/*Estilo de bontones*/
+button{
+    font-family: inherit;
+    transition: 1s;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color: black;
+}
+
+button:hover{
+    transition: 0.3s;
+    background-color: #EA3F3F;
+    color: #fff;
+
+}
+/*=========================================
+            05. FOOTER CSS
+============================================*/
+footer{
+    background-color: #EA3F3F; 
+    color: #fff; 
+    padding-top: 30px;
+}
+.bordef{
+    border-bottom: 1px  solid #fff;
+>>>>>>> e4271b7 (“actualización”)
+}
