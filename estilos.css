@@ -90,13 +90,6 @@ a{
     height: 100%;
     color: white;
 }
-.caja-imagen2{
-    margin-top: 4rem;
-    background-image: url("assets/img/banner.jpg");
-    background-size: 100% 100%;
-    height: 500px;
-    text-align: center;
-}
 .subcaja-imagen2{
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -110,7 +103,7 @@ a{
     text-align: center;
 }
 .subcaja-fundador{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
     color: white;
@@ -166,6 +159,9 @@ a{
 }
 .titulob1{
     color:#fff;
+}
+.textc{
+    text-align: center;
 }
 ul .carpeta{ 
     list-style-image: url("assets/iconos/folder.png"); 
@@ -266,4 +262,5 @@ footer{
 .bordef{
     border-bottom: 1px  solid #fff;
 }
+
 
