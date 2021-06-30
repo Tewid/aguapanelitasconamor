@@ -251,6 +251,18 @@ button:hover{
 .espaciop{
     margin-top: 5rem;
 }
+.decoracion{
+    text-decoration: none;
+    color: #fff;
+}
+.ayuda{
+    color: black;
+    text-decoration: none;
+}
+.ayuda:hover{
+    color:#3b7bbf;
+    text-decoration: underline #3b7bbf;
+}
 /*=========================================
             05. FOOTER CSS
 ============================================*/
