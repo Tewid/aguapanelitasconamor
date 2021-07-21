@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,80 +8,98 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Galeria - Agua Panelitas con amor</title>
-    <link rel="icon" href="assets/img/logo.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/iconos/logo.svg" type="image/svg" sizes="16x16">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
 </head>
 <body>
-
+    <!--cabeza-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
-        <div class="col-2 d-flex align-items-center justify-content-center">
-            <a href="index.html"><img src="assets/img/logo.png" width="71px" height="70px"></a>
+        <div class="col-md-3 col-3 d-flex align-items-center justify-content-center">
+            <a href="index.html"><img src="assets/iconos/logo.svg" width="71px" height="73px"></a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="index.html">Inicio</span></a>
-                  <a class="nav-item nav-link" href="mapa_sitio.html">Mapa del Sitio</a>
-                  <a class="nav-item nav-link" href="mapa_sitio.html">Quienes Somos</a>
+                  <a class="nav-item nav-link" href="index.html">Inicio </a>
+                  <a class="nav-item nav-link " href="mapa_sitio.html">Mapa del Sitio</a>
+                  <a class="nav-item nav-link" href="sobre_nosotros.html">Quienes Somos</a>
                   <a class="nav-item nav-link" href="galeria.html">Galeria</a>
-                  <a class="nav-item nav-link disabled" href="voluntarios.html">Voluntarios <span class="sr-only">(actual)</span></a>
+                  <a class="nav-item nav-link disabled" href="voluntarios.php">Voluntarios <span class="sr-only">(actual)</span></a>
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-4">
+        <div class="col-md-3 col-4 d-flex justify-content-end">
             <a href="donar.html"><button class="b-donar"><img src="assets/iconos/corazon.svg" height="30em"> DONAR</button></a>
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-2">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-
-      </nav>
-      
+    </nav>
+      <!--//fin cabeza//-->
+      <!--Cuerpo-->
+      <div id="myButton"></div><!-- archivo whatssap-->
       <div class="banner1">
-        <h1>Voluntarios</h1>
+        <h1 class="py-3 cajitav">VOLUNTARIOS</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-6"></div>
                 <div class="col-md-6 contenedorform">
                     <div class="col-12"><h3 style="margin-top: 30px;" class="titulo">Formulario de voluntarios </h3></div>
-
-                    <div class="col-12  d-flex justify-content-center py-4">
+                    
+                    <div class="col-12  d-flex justify-content-center py-2">
                         <div class="form">
                             <input type="text" name="NamVal" required>
-                            <label class="lbl-nombre">
-                                <span class="text-nomb">Nombre</span>
+                            <label class="lbl-nombre" for="NamVal">
+                                <span class="text-nomb" name="NamVal">Nombre</span>
                             </label>
                         </div>
                     </div>
-                    <div class="col-12  d-flex justify-content-center py-4">
+                    <div class="col-12  d-flex justify-content-center py-2">
                         <div class="form">
-                            <input type="tel" name="NamVal" required>
-                            <label class="lbl-nombre">
-                                <span class="text-nomb">Telefono</span>
+                            <input type="tel" name="TelVal" required>
+                            <label class="lbl-nombre" for="TelVal">
+                                <span class="text-nomb" name="TelVal">Telefono</span>
+                            </label>
+                            <?php
+                            ?>
+                        </div>
+                    </div>
+                    <div class="col-12  d-flex justify-content-center py-2">
+                        <div class="form">
+                            <input type="email" name="CorreoVal" required>
+                            <label class="lbl-nombre" for="CorreoVal">
+                                <span class="text-nomb" name="CorreoVal">Correo electronico</span>
                             </label>
                         </div>
+
                     </div>
                     <div class="col-12 py-4">
                         <div class="col-12 ">
-                            <textarea cols="55" rows="6" placeholder="Mensaje"></textarea>
+                            <textarea cols="55" rows="6" placeholder="Mensaje" height="5em" style="resize: none;"></textarea>
                         </div>
                     </div>
-
+                    <div class="col-12 py-1">
+                        <button type="submit" class="b-enviar">Enviar</button>
+                    </div>
+                    <div class="my-1">&nbsp</div>
                 </div>
             </div>
         </div>
       </div>
-      <div class="col-12 caja-titulo">
+      <!--<div class="col-12 caja-titulo">
         <h3 class="my-3">PERSONAL</h3>
       </div>
-        <div class="container contenedor-g">
+      <div class="container contenedor-g">
         Galeria de Videos
-        </div>
-        <div class="container contenedor-g-2 d-flex align-items-center justify-content-center">
+      </div>
+      <div class="container contenedor-g-2 d-flex align-items-center justify-content-center">
         Avanzar y retroceder galeria
-        </div>
-
+      </div>-->
+      <!--Fin Cuerpo-->
       <!--Pies-->
       <footer>
         <div class="container d-flex align-items-center justify-content-center">
@@ -110,11 +129,24 @@
         </div>
     </footer>
     <!--//fin pies//-->
-
-    <!--Archivos de javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!--Archivos de javascript-->
 </body>
+<!--Archivos de javascript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '573024949122',
+            popupMessage: 'Hola, somos Agua Panelias con amor, como le puedo ayudar?',
+            message: "Me gustaría saber acerca del proyecto",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenidos Agua Panelias con amor!',
+            headerColor: '#7FA2EA', 
+            backgroundColor: '#7FA2EA',
+            buttonImage: '<img src="whatsApp.svg" />'
+        });
+    });
+</script>
+<!--Archivos de javascript-->
 </html>

@@ -39,10 +39,22 @@ a{
 .b-donar{
     background-color: #EA3F3F;
     border: none;
-    width: 90%;
+    width: 2%;
     padding: 15px;
     border-radius: 30px;
     color: white;
+}
+.b-enviar{
+    background-color: #EA3F3F;
+    border: none;
+    width: 60%;
+    height: 3rem;
+    border-radius: 30px;
+    color: white;
+}
+.b-enviar:hover{
+    transition: 0.3s;
+    background-color: #C73535;
 }
 .b-donar:hover{
     transition: 0.3s;
@@ -57,7 +69,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EA3F3F;
+    background-color: #7FA2EA;
     color: #fff;
     text-align: center;
 }
@@ -71,7 +83,7 @@ a{
     vertical-align: middle;
 }
 .contenedorform{
-    height: 30rem;
+    height: 100%;
     background-color:rgb(255, 255, 255);
     border-radius: 30px;
 }
@@ -113,12 +125,17 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
 }
+.cajitav
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
 .caja-titulo{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EA3F3F;
+    background-color: #7FA2EA;
     color: #fff;
     text-align: center;
     
@@ -146,12 +163,15 @@ a{
     height: 100%;
 }
 .contenedor-g-2{
-    background-color: rebeccapurple;
     height: 4rem;
 }
 /*Titulos*/
 .titulo{
     color:#EA3F3F;
+    text-align: center;
+}
+.titulo2{
+    color:#7FA2EA;
     text-align: center;
 }
 .titulob{
@@ -255,6 +275,29 @@ button:hover{
     text-decoration: none;
     color: #fff;
 }
+.decoracion2{
+    text-decoration: none;
+    color: #000;
+}
+.decoracion2:hover{
+    transition: 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+.paypal{
+    background-color: #fff;
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    height: 4rem;
+}
+.paypal:hover{
+    transition: 0.3s;
+    background-color: #3b7bbf;
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    height: 4rem;
+    color: #fff;
+}
 .ayuda{
     color: black;
     text-decoration: none;
@@ -263,11 +306,20 @@ button:hover{
     color:#3b7bbf;
     text-decoration: underline #3b7bbf;
 }
+.rojo{
+    background-color: #7FA2EA; 
+    color: white;
+}
 /*=========================================
             05. FOOTER CSS
 ============================================*/
 footer{
     background-color: #EA3F3F; 
+    color: #fff; 
+    padding-top: 30px;
+}
+.footer2{
+    background-color: #7FA2EA; 
     color: #fff; 
     padding-top: 30px;
 }
