@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,43 +48,47 @@
                 <div class="col-md-6"></div>
                 <div class="col-md-6 contenedorform">
                     <div class="col-12"><h3 style="margin-top: 30px;" class="titulo">Formulario de voluntarios </h3></div>
-                    
-                    <div class="col-12  d-flex justify-content-center py-2">
-                        <div class="form">
-                            <input type="text" name="NamVal" required>
-                            <label class="lbl-nombre" for="NamVal">
-                                <span class="text-nomb" name="NamVal">Nombre</span>
-                            </label>
+                    <form method="post">
+                        <div class="col-12  d-flex justify-content-center py-2">
+                            <div class="form">
+                                <input type="text" name="NamVal" required>
+                                <label class="lbl-nombre">
+                                    <span class="text-nomb">Nombre</span>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12  d-flex justify-content-center py-2">
-                        <div class="form">
-                            <input type="tel" name="TelVal" required>
-                            <label class="lbl-nombre" for="TelVal">
-                                <span class="text-nomb" name="TelVal">Telefono</span>
-                            </label>
-                            <?php
-                            ?>
+                        <div class="col-12  d-flex justify-content-center py-2">
+                            <div class="form">
+                                <input type="tel" name="TelVal" required>
+                                <label class="lbl-nombre">
+                                    <span class="text-nomb">Telefono</span>
+                                </label>
+                                <?php
+                                ?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12  d-flex justify-content-center py-2">
-                        <div class="form">
-                            <input type="email" name="CorreoVal" required>
-                            <label class="lbl-nombre" for="CorreoVal">
-                                <span class="text-nomb" name="CorreoVal">Correo electronico</span>
-                            </label>
-                        </div>
+                        <div class="col-12  d-flex justify-content-center py-2">
+                            <div class="form">
+                                <input type="email" name="CorreoVal" required>
+                                <label class="lbl-nombre">
+                                    <span class="text-nomb">Correo electronico</span>
+                                </label>
+                            </div>
 
-                    </div>
-                    <div class="col-12 py-4">
-                        <div class="col-12 ">
-                            <textarea cols="55" rows="6" placeholder="Mensaje" height="5em" style="resize: none;"></textarea>
                         </div>
-                    </div>
-                    <div class="col-12 py-1">
-                        <button type="submit" class="b-enviar">Enviar</button>
-                    </div>
-                    <div class="my-1">&nbsp</div>
+                        <div class="col-12 py-4">
+                            <div class="col-12 ">
+                                <textarea cols="55" rows="6" placeholder="Mensaje" height="5em" style="resize: none;" name="MsgVal"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 py-1">
+                            <button type="submit" class="b-enviar" name="enviarf">Enviar</button>
+                        </div>
+                        <?php
+                        include("enviar.php")
+                        ?>
+                        <div class="my-1">&nbsp</div>
+                    </form>
                 </div>
             </div>
         </div>
